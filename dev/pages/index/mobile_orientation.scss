@@ -1,0 +1,59 @@
+.mobile_orientation {
+  display: none;
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  body, html {
+    overflow: hidden
+  }
+  .mobile_orientation {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999999;
+    left: 0;
+    top: 0;
+    background: #0F3574;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .mobile_orientation-block {
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .block_text {
+      @media screen and (min-height: 811px){
+        margin-top: -400px;
+      }
+    }
+  }
+
+  .mobile_orientation-logo, .mobile_orientation-img, .mobile_orientation-text {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+
+  }
+
+
+  .mobile_orientation-img {
+    margin-bottom: 27px;
+    
+  }
+
+  .mobile_orientation-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+}

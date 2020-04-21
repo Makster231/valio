@@ -1,0 +1,91 @@
+/*  First screen*/
+.main_first-screen {
+  position: relative;
+  z-index: 1000;
+  padding: 41px 0 35px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, .25);
+  background: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 25px;
+    width: 145px;
+    height: 101px;
+    background: url("../../images/logo_big.svg");
+
+    @media screen and (max-width: 1024px) {
+      top: 56px;
+      left: 30px;
+      width: 81px;
+      height: 57px;
+      background-size: cover;
+    }
+  }
+
+  /*  Title*/
+  .first_screen-title {
+    display: block;
+    margin: 0 auto 24px;
+    max-width: 508px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    text-align: center;
+    color: #0f3574;
+
+    @media screen and (max-height: 768px) {
+      margin: 0 auto 18px;
+      line-height: 26px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      margin: 0 auto 10px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  /*  Content*/
+  .first_screen-content {
+    display: block;
+    margin: 0 auto 18px;
+    width: 100%;
+    max-width: 750px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 19px;
+    text-align: center;
+    color: #0f3574;
+
+    &:last-of-type {
+      margin: 0 auto 35px;
+    }
+
+    @media screen and (max-height: 769px) {
+
+      &:last-of-type {
+        margin: 0 auto 28px;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      margin: 0 auto 10px;
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+
+  @media screen and (max-height: 768px) {
+    padding: 21px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    max-height: 432px;
+  }
+}

@@ -1,0 +1,47 @@
+/*  First screen*/
+.main_slide {
+  position: relative;
+  z-index: 1000;
+  padding: 19px 0 21px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, .25);
+  background: #ffffff;
+
+  .main_slide-title {
+    margin: 0 auto 23px;
+    width: 100%;
+    max-width: 508px;
+    background: #ffffff;
+    font-family: "Exo 2", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    text-align: center;
+    color: #0f3574;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 20px;
+  }
+
+  @media screen and (max-height: 768px) {
+    padding: 20px;
+
+    .main_slide-title {
+      margin: 0 auto 18px;
+      line-height: 26px;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 18px;
+      }
+    }
+
+    .slides_answers {
+      margin-bottom: 36px;
+    }
+
+    .slides_answer {
+      height: 56px;
+    }
+  }
+}

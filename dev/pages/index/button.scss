@@ -1,0 +1,51 @@
+/*  Button*/
+.slides_button {
+  position: relative;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  width: 100%;
+  padding: 23px 0;
+  max-width: 263px;
+  background: #0F3574;
+  mix-blend-mode: normal;
+  border-radius: 10px;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  display: block;
+  margin: 0 auto;
+  transition: 300ms ease;
+
+  &:hover {
+    background: #439DD6;
+    cursor: pointer;
+    cursor: url('../../images/button_cursor.png') 2 2, pointer;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    background: url('../../images/button_arrow.svg');
+    top: 32px;
+    right: 16px;
+    width: 17px;
+    height: 7px;
+    z-index: 10;
+  }
+
+  @media screen and (max-height: 768px) {
+    &:last-of-type {
+      padding: 18px 0;
+    }
+    &::after {
+      top: 27px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    max-width: 172px;
+  }
+}

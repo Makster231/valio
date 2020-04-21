@@ -1,0 +1,927 @@
+
+<!--использование +icon('имя файл иконки', 'имя дополнительного класса для стилей'--><!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content=""><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+    <script src="js/polyfills.js"></script>
+  </head>
+  <body class="index-page" style="opacity:0">
+    <div class="content content_bg-first_screen">
+      <div class="mobile_orientation">
+        <div class="mobile_orientation-block">
+          <div class="block_logo"><img class="mobile_orientation-logo" src="./images/logo.png" alt="logo"></div>
+          <div class="block_text"><img class="mobile_orientation-img" src="./images/mobile.svg" alt="mobile">
+            <p class="mobile_orientation-text">Переверните телефон в горизонтальное положение</p>
+          </div>
+        </div>
+      </div>
+<header class="header"><svg class="header_logo" viewBox="0 0 273 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<rect x="4" width="265" height="57" rx="10" fill="white"/>
+<path d="M137 69L124.01 55.5L149.99 55.5L137 69Z" fill="white"/>
+<path d="M60.4467 27.776L59.8707 31.136H62.4867L62.0787 33.272H59.4867L58.6707 38H55.9827L56.7987 33.272H53.4627L52.6467 38H49.9587L50.7747 33.272H47.9907L48.3987 31.136H51.1587L51.7347 27.776H48.9987L49.4067 25.664H52.1187L52.8387 21.44H55.5267L54.7827 25.664H58.1427L58.8627 21.44H61.5507L60.8067 25.664H63.4947L63.0867 27.776H60.4467ZM57.7587 27.776H54.4227L53.8467 31.136H57.1827L57.7587 27.776ZM79.3577 21.44L74.8697 36.992C74.7897 37.296 74.6297 37.544 74.3897 37.736C74.1657 37.912 73.8937 38 73.5737 38H70.2377C69.9177 38 69.6377 37.912 69.3977 37.736C69.1737 37.544 69.0217 37.296 68.9417 36.992L64.4297 21.44H68.1977L71.1977 33.392C71.3577 34.032 71.4937 34.648 71.6057 35.24H72.2057C72.2537 34.936 72.3897 34.32 72.6137 33.392L75.5897 21.44H79.3577ZM80.6158 28.808L80.2798 26.408C82.4078 26.024 84.4638 25.832 86.4478 25.832C88.0478 25.832 89.2238 26.16 89.9758 26.816C90.7278 27.456 91.1038 28.576 91.1038 30.176V38H88.2958L87.9358 36.2C86.7518 37.592 85.2958 38.288 83.5678 38.288C82.4318 38.288 81.5038 37.992 80.7838 37.4C80.0638 36.792 79.7038 35.952 79.7038 34.88V33.68C79.7038 32.736 80.0238 32 80.6638 31.472C81.3038 30.944 82.1918 30.68 83.3278 30.68H87.5518V30.152C87.5358 29.544 87.3918 29.136 87.1198 28.928C86.8638 28.72 86.3598 28.616 85.6078 28.616C84.2958 28.616 82.6318 28.68 80.6158 28.808ZM83.2078 33.944V34.4C83.2078 35.216 83.6718 35.624 84.5998 35.624C85.5598 35.624 86.5438 35.24 87.5518 34.472V32.816H84.3598C83.5918 32.832 83.2078 33.208 83.2078 33.944ZM97.473 21.2V34.136C97.473 34.936 97.921 35.336 98.817 35.336H99.777L100.185 37.808C99.577 38.128 98.633 38.288 97.353 38.288C96.297 38.288 95.465 38.008 94.857 37.448C94.249 36.872 93.945 36.064 93.945 35.024V21.2H97.473ZM102.829 20.936H104.413C105.101 20.936 105.445 21.28 105.445 21.968V23.264C105.445 23.952 105.101 24.296 104.413 24.296H102.829C102.141 24.296 101.797 23.952 101.797 23.264V21.968C101.797 21.28 102.141 20.936 102.829 20.936ZM105.397 38H101.869V26.168H105.397V38ZM113.997 25.832C116.205 25.832 117.765 26.312 118.677 27.272C119.605 28.216 120.069 29.824 120.069 32.096C120.069 34.368 119.605 35.976 118.677 36.92C117.765 37.848 116.205 38.312 113.997 38.312C111.773 38.312 110.197 37.848 109.269 36.92C108.357 35.976 107.901 34.368 107.901 32.096C107.901 29.808 108.357 28.192 109.269 27.248C110.197 26.304 111.773 25.832 113.997 25.832ZM113.997 28.496C113.053 28.496 112.421 28.736 112.101 29.216C111.781 29.696 111.621 30.656 111.621 32.096C111.621 33.504 111.781 34.448 112.101 34.928C112.421 35.408 113.053 35.648 113.997 35.648C114.909 35.648 115.525 35.408 115.845 34.928C116.181 34.448 116.349 33.504 116.349 32.096C116.349 30.672 116.189 29.72 115.869 29.24C115.549 28.744 114.925 28.496 113.997 28.496ZM134.107 34.904L134.419 37.616C132.979 38.064 131.211 38.288 129.115 38.288C126.555 38.288 124.755 37.648 123.715 36.368C122.675 35.088 122.155 32.872 122.155 29.72C122.155 26.568 122.675 24.352 123.715 23.072C124.755 21.792 126.555 21.152 129.115 21.152C130.971 21.152 132.627 21.336 134.083 21.704L133.771 24.44C132.475 24.36 130.923 24.32 129.115 24.32C127.915 24.32 127.091 24.704 126.643 25.472C126.211 26.224 125.995 27.64 125.995 29.72C125.995 31.8 126.211 33.224 126.643 33.992C127.091 34.744 127.915 35.12 129.115 35.12C131.339 35.12 133.003 35.048 134.107 34.904ZM140.106 21.2V34.136C140.106 34.936 140.554 35.336 141.45 35.336H142.41L142.818 37.808C142.21 38.128 141.266 38.288 139.986 38.288C138.93 38.288 138.098 38.008 137.49 37.448C136.882 36.872 136.578 36.064 136.578 35.024V21.2H140.106ZM151.941 33.272H147.669C147.781 34.136 148.037 34.72 148.437 35.024C148.853 35.312 149.533 35.456 150.477 35.456C151.741 35.456 153.213 35.368 154.893 35.192L155.229 37.4C153.997 37.992 152.277 38.288 150.069 38.288C147.845 38.288 146.261 37.808 145.317 36.848C144.373 35.888 143.901 34.304 143.901 32.096C143.901 29.776 144.357 28.152 145.269 27.224C146.197 26.296 147.749 25.832 149.925 25.832C151.893 25.832 153.317 26.176 154.197 26.864C155.077 27.536 155.525 28.568 155.541 29.96C155.541 31.064 155.253 31.896 154.677 32.456C154.117 33 153.205 33.272 151.941 33.272ZM147.597 31.136H150.957C151.389 31.136 151.677 31.032 151.821 30.824C151.981 30.616 152.061 30.312 152.061 29.912C152.061 29.352 151.917 28.968 151.629 28.76C151.341 28.536 150.813 28.424 150.045 28.424C149.133 28.424 148.509 28.608 148.173 28.976C147.837 29.328 147.645 30.048 147.597 31.136ZM158.147 28.808L157.811 26.408C159.939 26.024 161.995 25.832 163.979 25.832C165.579 25.832 166.755 26.16 167.507 26.816C168.259 27.456 168.635 28.576 168.635 30.176V38H165.827L165.467 36.2C164.283 37.592 162.827 38.288 161.099 38.288C159.963 38.288 159.035 37.992 158.315 37.4C157.595 36.792 157.235 35.952 157.235 34.88V33.68C157.235 32.736 157.555 32 158.195 31.472C158.835 30.944 159.723 30.68 160.859 30.68H165.083V30.152C165.067 29.544 164.923 29.136 164.651 28.928C164.395 28.72 163.891 28.616 163.139 28.616C161.827 28.616 160.163 28.68 158.147 28.808ZM160.739 33.944V34.4C160.739 35.216 161.203 35.624 162.131 35.624C163.091 35.624 164.075 35.24 165.083 34.472V32.816H161.891C161.123 32.832 160.739 33.208 160.739 33.944ZM174.332 26.168L174.596 27.92C176.308 26.528 177.996 25.832 179.66 25.832C180.732 25.832 181.548 26.112 182.108 26.672C182.684 27.232 182.972 28.048 182.972 29.12V38H179.444V30.224C179.444 29.696 179.356 29.336 179.18 29.144C179.02 28.936 178.724 28.832 178.292 28.832C177.54 28.832 176.444 29.192 175.004 29.912V38H171.452V26.168H174.332ZM189.635 21.44V33.8C189.635 34.232 189.731 34.544 189.923 34.736C190.131 34.928 190.467 35.024 190.931 35.024H196.619L196.787 37.808C195.171 37.984 192.835 38.072 189.779 38.072C188.499 38.072 187.547 37.752 186.923 37.112C186.299 36.472 185.987 35.616 185.987 34.544V21.44H189.635ZM199.649 20.936H201.233C201.921 20.936 202.265 21.28 202.265 21.968V23.264C202.265 23.952 201.921 24.296 201.233 24.296H199.649C198.961 24.296 198.617 23.952 198.617 23.264V21.968C198.617 21.28 198.961 20.936 199.649 20.936ZM202.217 38H198.689V26.168H202.217V38ZM213.674 23.312H211.442C210.85 23.312 210.434 23.424 210.194 23.648C209.97 23.872 209.858 24.272 209.858 24.848V26.168H213.122V28.544H209.858V38H206.282V28.544H204.218V26.288L206.282 26.168V24.368C206.282 21.936 207.578 20.72 210.17 20.72C211.85 20.72 213.13 20.8 214.01 20.96L213.674 23.312ZM222.348 33.272H218.076C218.188 34.136 218.444 34.72 218.844 35.024C219.26 35.312 219.94 35.456 220.884 35.456C222.148 35.456 223.62 35.368 225.3 35.192L225.636 37.4C224.404 37.992 222.684 38.288 220.476 38.288C218.252 38.288 216.668 37.808 215.724 36.848C214.78 35.888 214.308 34.304 214.308 32.096C214.308 29.776 214.764 28.152 215.676 27.224C216.604 26.296 218.156 25.832 220.332 25.832C222.3 25.832 223.724 26.176 224.604 26.864C225.484 27.536 225.932 28.568 225.948 29.96C225.948 31.064 225.66 31.896 225.084 32.456C224.524 33 223.612 33.272 222.348 33.272ZM218.004 31.136H221.364C221.796 31.136 222.084 31.032 222.228 30.824C222.388 30.616 222.468 30.312 222.468 29.912C222.468 29.352 222.324 28.968 222.036 28.76C221.748 28.536 221.22 28.424 220.452 28.424C219.54 28.424 218.916 28.608 218.58 28.976C218.244 29.328 218.052 30.048 218.004 31.136Z" fill="#0F3574"/>
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="0" width="273" height="77" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg><img class="header_logo img" src="images/logo.png" alt="">
+</header>
+      <div class="main-container">
+        <ul class="main">
+<li class="slides main_first-screen">
+  <h1 class="first_screen-title">КАЛЬКУЛЯТОР УГЛЕРОДНОГО СЛЕДА 
+    <p>#ValioCleanLife</p>
+  </h1><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <p class="first_screen-content">Какой след вы оставите в истории? Углеродный!</p>
+  <p class="first_screen-content">Углеродный след - это количество парниковых газов, которые образуются в результате деятельности человека. Они пересчитываются в эквиваленте СО2 в килограммах. Количество выбросов парниковых газов растет: общий углеродный след России составляет уже 2651,2 миллиона тонн CO2 в год – и каждый из нас вносит свой вклад в увеличение этой цифры.</p>
+  <p class="first_screen-content">Ваш индивидуальный углеродный след - это парниковые газы, которые выбрасываются в атмосферу, когда вы пользуетесь электричеством, транспортом, также учитывается энергия для производства еды, одежды и всего, что вы потребляете. Даже зарядка для телефона, оставленная в розетке, увеличивает ваш углеродный след!</p>
+  <p class="first_screen-content">Калькулятор углеродного следа #ValioCleanLife концентрируется на потреблении товаров и сравнивает ваши результаты с другими людьми в России и других странах. Выберите тот вариант ответа, который наиболее соответствует вашему образу жизни!</p>
+  <button class="slides_button js_next-slide" type="button">Начать тест</button>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Какое количество пищи вы обычно употребляете в течение обычного дня?</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Питаюсь как воробышек, а иногда и вовсе забываю поесть.</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Я ем небольшие порции (размером с маленькое блюдце) 3-4 раза в день</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-65">Я никогда себя ни в чём не ограничиваю. Всегда при возможности прошу добавки</p>
+    </div>
+  </div>
+  <div class="slides_count">1/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Какие продукты питания у вас самые любимые и составляют большую часть вашего ежедневного рациона?</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Говядина и мясное ассорти</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Свинина, курица, морепродукты, яйца</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Овощи, фрукты, зелень, зерновые</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Хлебопродукты, включая выпечку и сладкое</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Молочные продукты (молоко, простокваша, йогурт, творог, сливки, масло и т.д.)</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-70">У меня сбалансированное питание. Я ем все вышеуказанные продукты почти каждый день</p>
+    </div>
+  </div>
+  <div class="slides_count">2/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Обращаете ли вы внимание на состав продуктов, которые покупаете?</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-60">Я часто употребляю фастфуд и полуфабрикаты, честно говоря, я даже не знаю, что в составе</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Я покупаю то, что мне нравится, и не особо слежу, что в составе</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-70">Я тщательно читаю этикетки и беру продукты с небольшим количеством ингредиентов и с максимально простым и понятным мне составом</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-70">Я, конечно, стремлюсь покупать мало и не полуфабрикаты с полезным составом, но иногда руки так и тянутся к каким-нибудь вредностям</p>
+    </div>
+  </div>
+  <div class="slides_count">3/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Где и как вы приобретаете воду?</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Я часто покупаю воду в одноразовых пластиковых бутылках</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Я фильтрую воду дома из крана и использую многоразовые бутылки</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Заказываю воду большими бутылками с доставкой</p>
+    </div>
+  </div>
+  <div class="slides_count">4/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Какой способ передвижения вы чаще всего используете?</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Я хожу пешком</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-65">Я всё заказываю онлайн, и товары доставляют прямо к двери моего дома/квартиры, так что мало выхожу из дома</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Я езжу на велосипеде или самокате</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Я езжу на своей малолитражке / Tesla /Toyota Prius</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">У меня большой внедорожник – езжу везде на нем! И удобно и всё помещается</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Я езжу на легковом автомобиле или такси</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Я езжу на общественном транспорте</p>
+    </div>
+  </div><img class="bottom_icon" src="../images/skoolaavat_lasit_RGB.png" alt="" srcset="">
+  <div class="slides_count">5/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">На чем вы чаще всего путешествовали за последний год?</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Почти всегда выбираю самолет – удобно и быстро!</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Часто передвигаюсь на поездах. И с людьми можно пообщаться и окрестности посмотреть</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Часто езжу на машине даже на дальние расстояния. Все можно взять с собой!</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Я предпочитаю отдыхать недалеко от дома – дача, парки и леса</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Предпочитаю прогулки на пароходах.</p>
+    </div>
+  </div>
+  <div class="slides_count">6/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Сколько часов за последний год (12 месяцев) вы летали на самолётах (не считая времени на ожидания):</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">0 часов</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Менее 5 часов</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">5 – 15 часов</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">15 – 30 часов</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Более 30 часов</p>
+    </div>
+  </div>
+  <div class="slides_count">7/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Сколько километров в неделю вы ездите на машине (собственной, такси)?</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Я не езжу на машине</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Менее 100 км</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">100 – 400 км</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Более 400 км</p>
+    </div>
+  </div>
+  <div class="slides_count">8/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Где вы живете большую часть года?</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">В квартире в многоэтажном доме (50 и больше квартир)</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">В собственном доме</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">В малоэтажном доме (50 и менее квартир)</p>
+    </div>
+  </div>
+  <div class="slides_count">9/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Какой в вашем доме метод отопления?</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Центральное отопление или мазут</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Электричество</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Природный газ</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Древесина или пеллеты</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Возобновляемая энергия (энергия солнца, ветра и т.д.)</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Я не знаю</p>
+    </div>
+  </div><img class="bottom_icon" src="../images/lumi_RGB.png" alt="" srcset="">
+  <div class="slides_count">10/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Сколько человек живёт с вами?</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">1</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">2</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">3</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">4</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">5</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Больше 5-ти</p>
+    </div>
+  </div><img class="bottom_icon" src="../images/knowhow_RGB.png" alt="" srcset="">
+  <div class="slides_count">11/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Сколько человек живёт с вами?</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Менее 20 м2</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">20 – 50 м2</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">51 – 80 м2</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">81 – 120 м2</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">121 – 200 м2</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Более 200 м2</p>
+    </div>
+  </div>
+  <div class="slides_count">12/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Я покупаю водо/энергосберегающую бытовую технику:</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Да, всегда. Это же еще и экономия на коммунальных платежах!</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Да, постепенно, когда обновляю ту, которая стоит дома.</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-60">Нет, я совсем не слежу за этим. Главное, чтобы было функционально и недорого.</p>
+    </div>
+  </div>
+  <div class="slides_count">13/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Когда я хожу в магазин:</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-78">Я всегда приношу свои многоразовые сумки и экомешочки/фруктовки и стремлюсь не покупать продукты в пластиковой и пенопластовой упаковке.</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-88 w-m-100">По возможности стараюсь брать продукты в упаковке, которую можно сдать на переработку или повторно использовать. Стараюсь не брать пакет на кассе, а если это случается, использую его несколько раз.</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Не придаю значение типу упаковки при выборе покупок</p>
+    </div>
+  </div>
+  <div class="slides_count">14/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Какое количество продуктов вы покупаете и используете?</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-75">Я покупаю столько продуктов, сколько смогу съесть до того, как продукты не испортятся. И стараюсь не выбрасывать остатки – использую все!</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-65">Покупаю много продуктов про запас. Часто бывает, что продукты портятся, и я их выбрасываю</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-65">Я стараюсь покупать на короткий период, но иногда приходится некоторые продукты выбрасывать, когда они испортились</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-60">Редко хожу в магазины, питаюсь в кафе и ресторанах, заказываю еду на дом</p>
+    </div>
+  </div><img class="bottom_icon" src="../images/juusto_RGB.png" alt="" srcset="">
+  <div class="slides_count">15/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Как вы поступаете с мусором?</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-78">Я стремлюсь разделять отходы, но это непросто. Иногда удаётся пластик, бумагу и батарейки сдавать на вторичную переработку.</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-85">Я пока ничего не знаю про разделение отходов и честно признаюсь, мне некогда этим заниматься, – я выбрасываю весь мусор в один контейнер</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-85">Я сортирую и сдаю в переработку все, что возможно - метал, стекло, бумагу, пластик, ненужную одежду и даже регулярно компостирую пищевые отходы</p>
+    </div>
+  </div><img class="bottom_icon" src="../images/tuotanto_RGB.png" alt="" srcset="">
+  <div class="slides_count">16/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Я предпочитаю бренды, продукты и компании…</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-66">Любые, для меня важно, чтобы продукт мне нравился, о их философии я не особо задумываюсь</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-85">Продукты, которых приносят мне пользу и радость. Я не часто задумываюсь, насколько эти бренды следуют принципам Устойчивого развития</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-60">Которые заботятся о людях, о планете и моём здоровье! Устойчивое развитие – это будущее!</p>
+    </div>
+  </div>
+  <div class="slides_count">17/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Как бы вы описали себя как покупателя?</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-66">Я покупаю только тогда и то, что мне абсолютно необходимо</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-78">Я люблю забирать ненужные им вещи у друзей, покупать вещи на блошиных рынках и Авито. Так можно найти много интересных и полезных вещей!</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-60">Я делаю импульсивные покупки время от времени</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-60">Я люблю жить по последней моде, так что покупаю много нового почти каждый сезон</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text w-60">Я часто хожу в магазины и на выставки, чтобы обновить коллекции своих любимых вещей</p>
+    </div>
+  </div>
+  <div class="slides_count">18/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Как часто вы покупаете новую одежду?</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Люблю секонд-хэнды, шеринги, регулярно переделываю старые вещи в новые</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Делаю импульсивные покупки время от времени, но в основном ношу одно и то же</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Покупаю новую вещь только тогда, когда старая приходит в негодность</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Каждый сезон покупаю что-то новое</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Люблю шопинг и каждые выходные, а то и чаще, что-то покупаю</p>
+    </div>
+  </div>
+  <div class="slides_count">19/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Как часто вы меняете свои электронные гаджеты (телефоны, планшеты, компьютеры и т. д.)?</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Я вообще их не покупаю</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Меняю гаджеты, как только выходят новые модели</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Использую гаджеты то тех пор, пока они не ломаются</p>
+    </div>
+  </div><img class="bottom_icon" src="../images/digi_RGB.png" alt="" srcset="">
+  <div class="slides_count">20/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Компенсируете ли вы выбросы парниковых газов от ваших путешествий и других действий? Например, добровольными платежами за выбросы углерода, высадкой деревьев и т.д.</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Я вообще их не покупаю</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Меняю гаджеты, как только выходят новые модели</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Использую гаджеты то тех пор, пока они не ломаются</p>
+    </div>
+  </div><img class="bottom_icon" src="../images/pilvet_RGB.png" alt="" srcset="">
+  <div class="slides_count">21/22</div>
+</li>
+<li class="slides main_slide d-none">
+  <ul class="slides_nav">
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Питание</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-1.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title w-60">Транспорт и энергия</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-2.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item">
+      <h4 class="nav_item-title">Отдых</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-3.png" alt="icon"></div>
+    </li>
+    <li class="slides_nav-item active">
+      <h4 class="nav_item-title">Осозанное производство и потребление</h4>
+      <div class="nav_item-circle"><img class="slides_icon" src="./images/slides_icon-4.png" alt="icon"></div>
+    </li>
+  </ul>
+  <h3 class="main_slide-title">Компенсируете ли вы выбросы парниковых газов от ваших путешествий и других действий? Например, добровольными платежами за выбросы углерода, высадкой деревьев и т.д.</h3><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <div class="slides_answers">
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Я вообще их не покупаю</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Меняю гаджеты, как только выходят новые модели</p>
+    </div>
+    <div class="slides_answer js_next-slide">
+      <p class="slides_answer-text">Использую гаджеты то тех пор, пока они не ломаются</p>
+    </div>
+  </div><img class="bottom_icon" src="../images/pilvet_RGB.png" alt="" srcset="">
+  <div class="slides_count">22/22</div>
+</li>
+<li class="slides main_last-screen main_last-screen--first d-none">
+  <h1 class="last_screen-title">ВЫ НА ПУТИ К ОТВЕСТВЕННОМУ ПОТРЕБЛЕНИЮ</h1><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <p class="last_screen-content"><strong>Ваш Углеродный след составляет от ---- до ----- в год.</strong></p>
+  <p class="last_screen-content">Ну что ж, вы явно стараетесь! И это здорово и для вас, и для Планеты!</p>
+  <p class="last_screen-content">Постарайтесь посмотреть на всё что вы делаете с точки зрения заботы о себе и планете. Помните: многие не задумываются об углеродном следе вообще, а кто-то помогает, просто прихватив из дома сумку или многоразовый стакан! Оставьте свою почту, и мы отправим вам простых 5 советов, как еще можно снизить свой углеродный след!</p><img class="last_screen-image" alt="itog_logo" src="./images/logo_big.svg">
+  <button class="slides_button js_next-slide" type="button">Поделиться</button>
+</li>
+<li class="slides main_last-screen main_last-screen--second d-none">
+  <h1 class="last_screen-title">ВЫ МАСТЕР УСТОЙЧИВОГО РАЗВИТИЯ</h1><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <p class="last_screen-content"><strong>Ваш Углеродный след составляет от ---- до ----- в год.</strong></p>
+  <p class="last_screen-content">Вы умница, так держать! Устойчивое развитие возможно именно благодаря таким, как вы!</p>
+  <p class="last_screen-content">Но совершенству нет предела! Предлагаем вам пофантазировать, как вы ещё можете помочь окружающей среде и Планете. Мы направим вам 5 советов, как еще можно снизить свой углеродный след! Оставляете почту и получайте ценные советы от Valio!</p><img class="last_screen-image" alt="itog_logo" src="./images/logo_big.svg">
+  <button class="slides_button js_next-slide" type="button">Поделиться</button>
+</li>
+<li class="slides main_last-screen main_last-screen--third d-none">
+  <h1 class="last_screen-title">ПОЗДРАВЛЯЕМ! ВАШ УГЛЕРОДНЫЙ СЛЕД МИНИМАЛЕН</h1><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <p class="last_screen-content"><strong>Ваш Углеродный след составляет от ---- до ----- в год.</strong></p>
+  <p class="last_screen-content">Он совсем почти незаметный для планеты! С таким уровнем осознанности можете начать свой проект или стартап по ответственному потреблению, заняться продвижением этих идей и даже стать блогером или тренером в вопросах устойчивого развития!</p><img class="last_screen-image" alt="itog_logo" src="./images/logo_big.svg">
+  <button class="slides_button js_next-slide" type="button">Поделиться</button>
+</li>
+<li class="slides main_last-screen main_last-screen--fourth d-none">
+  <h1 class="last_screen-title">КАЖЕТСЯ, ВЫ НАСЛЕДИЛИ…</h1><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <p class="last_screen-content"><strong>Ваш Углеродный след составляет от ---- до ----- в год.</strong></p>
+  <p class="last_screen-content">У вас ещё всё впереди. Не волнуйтесь, если вы раньше об этом не задумывались. Делайте то, что вы можете и хотите делать! Путь к Устойчивому развитию идет через отношение к жизни, не вините себя за прошлое - пробуйте и изучайте, что быть лучше в будущем!</p>
+  <p class="last_screen-content">С чего же начать? Оставьте свою почту, и мы отправим вам 5 советов, как можно снизить свой углеродный след!</p><img class="last_screen-image" alt="itog_logo" src="./images/logo_big.svg">
+  <button class="slides_button js_next-slide" type="button">Поделиться</button>
+</li>
+<li class="slides main_share d-none">
+  <h1 class="main_share-title">Получить 10 советов по снижению углеродного следа</h1><img class="img_wave" alt="wave" src="./images/wave.jpg">
+  <input class="main_share-input" type="email" placeholder="E-mail">
+  <div class="main_share-form">
+    <input class="main_share-check" type="checkbox" id="check">
+    <label class="main_share-label" for="check"> <a href="#">Я ознакомился и согласен с условиями
+        <u class="main_share-label--u"><br>пользовательского соглашения</u></a></label>
+  </div>
+  <button class="slides_button js_next-slide" type="button">Поделиться</button>
+  <div class="main_share-text">Поделиться результатом</div>
+  <ul class="main_share-list">
+    <li class="main_share-item"><a href="#"><img class="main_share-icon" alt="FB" src="./images/share_fb.png"></a></li>
+    <li class="main_share-item"><a href="#"><img class="main_share-icon" alt="OK" src="./images/share_ok.png"></a></li>
+    <li class="main_share-item"><a href="#"><img class="main_share-icon" alt="VK" src="./images/share_vk.png"></a></li>
+  </ul>
+</li>
+<li class="slides main_final d-none">
+  <h1 class="main_final-title">ПРИСОЕДИНЯЙТЕСЬ К ДВИЖНИЮ #ValioCleanLife</h1><img class="img_wave" alt="wave" src="./images/wave.svg">
+  <p class="main_final-content">Сокращение углеродного следа - одно из составляющих Устойчивого развития. И наши шаги сегодня могут помочь поколениям завтра.</p>
+  <p class="main_final-content">Компания Valio также присоединяется к целям по Устойчивому развитию. В том числе, запускает глобальный научный проект по сокращению углеродного следа сырого молока, из которого производится наша продукция - в Финляндии и в России. Также мы призываем жителей всей планеты становиться ответственнее вместе с нами: ведь недаром наша миссия звучит как Together we make life better - «Вместе мы делаем жизнь лучше»!</p>
+  <p class="main_final-content">Чтобы получить полное представление о вашем углеродном следе, мы рекомендуем продолжить ваше экологическое путешествие на сайте Valio https://www.valio.com/sustainability и сайте “Зелёного Драйвера” www.greendriver.ru</p><img class="main_final-image" alt="itog_logo" src="./images/logo_big.svg">
+</li>
+        </ul>
+      </div>
+<footer class="footer">
+  <ul class="footer_list">
+    <li class="footer_list-item"><a class="list_item-link" href="#"><img class="list_item-icon" alt="logo" src="./images/footer_facebook.svg"></a></li>
+    <li class="footer_list-item"><a class="list_item-link" href="#"><img class="list_item-icon" alt="logo" src="./images/footer_instagram.svg"></a></li>
+    <li class="footer_list-item"><a class="list_item-link" href="#"><img class="list_item-icon" alt="logo" src="./images/footer_youtube.svg"></a></li>
+  </ul>
+  <p class="footer_content">Тест основан на общепринятой методике расчета углеродного следа и разработан при поддержке экспертов в области экологии и устойчивого развития. Вы можете ознакомиться с научным обоснованием по ссылке.</p>
+  <p class="footer_content">© OyCopyright ООО «Валио»</p>
+</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")-->
+    <!--script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous")-->
+    <div class="side_logo"></div>
+  <script type="text/javascript" src="./js/main.js?4f762621b97876e4896c"></script></body>
+</html>

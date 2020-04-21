@@ -1,0 +1,55 @@
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.w-60 {
+  max-width: 60% !important;
+  margin: 0 auto;
+}
+
+.w-65 {
+  max-width: 65% !important;
+  margin: 0 auto;
+}
+
+.w-66 {
+  max-width: 66% !important;
+  margin: 0 auto;
+}
+
+.w-70 {
+  max-width: 70% !important;
+  margin: 0 auto;
+}
+
+.w-75 {
+  max-width: 75% !important;
+  margin: 0 auto;
+}
+
+.w-78 {
+  max-width: 78% !important;
+  margin: 0 auto;
+}
+
+.w-85 {
+  max-width: 85% !important;
+  margin: 0 auto;
+}
+
+
+.w-88 {
+  max-width: 88% !important;
+  margin: 0 auto;
+}
+
+@media screen and (max-height: 768px) {
+  .w-m-100 {
+    max-width: 100% !important;
+  }
+}

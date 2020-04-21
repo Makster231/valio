@@ -1,0 +1,39 @@
+
+.js_go-left {
+  animation-name: go-left;
+  animation-timing-function: ease-in;
+  animation-duration: 1000ms;
+}
+
+.js_go-right {
+  animation-name: go-right;
+  animation-timing-function: ease-in;
+  animation-duration: 700ms;
+}
+
+@keyframes go-left {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-1245px);
+    opacity: 0;
+  }
+  100% {
+    display: none;
+  }
+}
+
+@keyframes go-right {
+  0% {
+    opacity: 0;
+    transform: translateX(1245px);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,72 @@
+@import "fonts.scss";
+
+@import "mixins.scss";
+
+@import "vars.scss";
+
+@import "layout.scss";
+
+/*  extra styles*/
+@import "../../pages/index/scroll_bar";
+
+@import "../../pages/index/slides_animation";
+
+@import "../../pages/index/button";
+
+@import "../../pages/index/background-images";
+
+@import "../../pages/index/mobile_orientation";
+
+@import "../../pages/index/width_const";
+
+/*  Slides elements*/
+@import "../../pages/index/slides_nav";
+
+@import "../../pages/index/slides_answers";
+
+@import "../../pages/index/slides_count";
+
+/*  main css*/
+@import "../../pages/index/index";
+
+/*  header css*/
+@import "../../pages/index/header";
+
+/*  first screen css*/
+@import "../../pages/index/first_screen";
+
+/*  Slides css*/
+@import "../../pages/index/slide";
+// @import "../../pages/index/slide-2";
+// @import "../../pages/index/slide-3";
+// @import "../../pages/index/slide-4";
+// @import "../../pages/index/slide-5";
+// @import "../../pages/index/slide-6";
+// @import "../../pages/index/slide-7";
+// @import "../../pages/index/slide-8";
+// @import "../../pages/index/slide-9";
+// @import "../../pages/index/slide-10";
+// @import "../../pages/index/slide-11";
+// @import "../../pages/index/slide-12";
+// @import "../../pages/index/slide-13";
+// @import "../../pages/index/slide-14";
+// @import "../../pages/index/slide-15";
+// @import "../../pages/index/slide-16";
+// @import "../../pages/index/slide-17";
+// @import "../../pages/index/slide-18";
+// @import "../../pages/index/slide-19";
+// @import "../../pages/index/slide-20";
+// @import "../../pages/index/slide-21";
+// @import "../../pages/index/slide-22";
+
+/*  Slides Last Steps*/
+@import "../../pages/index/last_steps";
+
+/*  Share page css*/
+@import "../../pages/index/share";
+
+/*  Final Step css*/
+@import "../../pages/index/final";
+
+/*  Footer css*/
+@import "../../pages/index/footer";

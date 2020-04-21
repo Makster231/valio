@@ -1,0 +1,140 @@
+/*  Share*/
+.main_share {
+  padding: 50px 0 58px;
+  height: 568px;
+  background: #ffffff;
+
+
+
+  .main_share-title {
+    max-width: 566px;
+    width: 100%;
+    margin: 0 auto 24px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0F3574;
+  }
+
+  .img_wave {
+    display: block;
+    margin: 0 auto 65px;
+  }
+
+  .main_share-input {
+    width: 100%;
+    max-width: 263px;
+    display: block;
+    margin: 0 auto 27px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #0F3574;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid #0F3574;
+    background-color: #fff;
+  }
+
+
+  /*  Check box*/
+  .main_share-form {
+    max-width: 205px;
+    width: 100%;
+    margin: 0 auto 23px;
+    position: relative;
+
+    .main_share-label {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 16px;
+      color: #0F3574;
+      position: relative;
+      right: -10px;
+      .main_share-label--u{
+        text-decoration: none;
+      }
+    }
+
+    .main_share-check {
+      display: none;
+    }
+
+    input[type=checkbox] + label:before {
+      position: absolute;
+      left: -24px;
+      top: 12px;
+      content: "\2713";
+      color: transparent;
+      display: inline-block;
+      background-color: #fff;
+      border: 1px solid #0F3574;
+      box-sizing: border-box;
+      border-radius: 1px;
+      font-size: 15px;
+      line-height: 17px;
+      margin: -5px 0 0 0;
+      height: 17px;
+      width: 17px;
+      text-align: center;
+      vertical-align: middle;
+      transition: color ease 50ms;
+    }
+
+    input[type=checkbox]:checked + label:before {
+      color: #000;
+    }
+  }
+
+
+  .slides_button {
+    margin: 0 auto 28px;
+  }
+
+  .main_share-text {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #0F3574;
+    margin: 0 auto 19px;
+  }
+
+  .main_share-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 222px;
+    margin: 0 auto;
+    transition: 300ms ease;
+    .main_share-item{
+      @media screen and (max-height: 768px) {
+        margin: auto;
+      }
+    }
+    .main_share-item:hover{
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+  }
+
+
+  @media screen and (max-height: 768px) {
+    padding: 38px 0;
+    height: 500px;
+    .img_wave {
+      margin: 0 auto 35px;
+    }
+  }
+
+}
